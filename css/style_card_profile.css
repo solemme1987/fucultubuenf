@@ -1,0 +1,142 @@
+/*-----------------------------------------------------------*/
+/*----ESTILOS PARA LAS TARJETAS DE LOS PERFILES--------------*/
+/*-----------------------------------------------------------*/
+
+.team .img-profile {
+    position: relative;
+    overflow: hidden;
+    border: 5px solid white;
+}
+
+.team .img-profile::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.74);
+    position: absolute;
+    bottom: -400px;
+    left: 0;
+    transition: all 0.50s ease 0s;
+}
+
+.team:hover .img-profile::after {
+    bottom: 0;
+}
+
+.team img {
+    width: 100%;
+    height: auto;
+}
+
+.team .social {
+    list-style-type: none;
+    padding: 0 0 18px 0;
+    position: absolute;
+    top: -100%;
+    right: 10px;
+    background: #58a032;
+    border-radius: 0 0 20px 20px;
+    z-index: 1;
+    transition: all 0.50s ease 0s;
+
+
+}
+
+.team:hover .social {
+    top: 0
+}
+
+.team .social li a {
+    display: block;
+    padding: 15px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.team .carbody {
+    padding: 20px 0;
+    background: white;
+
+}
+
+.team .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2a4284;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+    position: relative;
+}
+
+.team .card-title:before {
+    content: '';
+    width: 25px;
+    height: 1px;
+    background: limegreen;
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    margin-right: 9px;
+    transition-duration: 0.50s;
+}
+
+.team .card-title:after {
+    content: '';
+    width: 25px;
+    height: 1px;
+    background: limegreen;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: 9px;
+    transition-duration: 0.25s;
+    margin-right: 9px;
+    transition-duration: 0.50s;
+}
+
+.team:hover .card-title:before,
+.team:hover .card-title:after {
+    width: 50px;
+}
+
+.team .card-text {
+    display: inline-block;
+    font-size: 15px;
+    color: deeppink;
+    text-transform: uppercase;
+}
+
+.team .card-text:before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    border-top-left-radius: 50%;
+    background: limegreen;
+    margin: auto;
+    position: relative;
+    top: -13px;
+}
+
+.team .text-perfil{
+    width: 85%;
+    color: #2a4284;
+    left:-100%;
+    letter-spacing: -1px;
+    margin-top: -60%;
+    z-index: 1;
+    text-align: justify;
+    transition: all 0.50s ease 0s;
+}
+.team:hover .text-perfil {
+    left: 0;
+    
+    /* bottom: 0; */
+}
+
+
+
+/*-----------------------------------------------------------*/
+/*----FIN DE ESTILOS PARA LAS TARJETAS DE PERFILES-----------*/
+/*-----------------------------------------------------------*/

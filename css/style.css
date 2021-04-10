@@ -1,0 +1,701 @@
+        body {
+            font-family: 'Work Sans', sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        
+/*----------------------------------------------------------*/
+/*-       ESTILOS PARA  LA PAGINA DE ABOUT US              -*/   
+/*----------------------------------------------------------*/
+
+        .about-us,.gallery{
+            background-position: center center;
+            background-size: cover;
+            height: 450px;
+            background-repeat: no-repeat;        
+        }
+
+        /* fotos de fondo de los slider */
+        #about-us {
+            background-image: url('../img/aboutus.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;           
+        }
+
+        .page-title {
+                color: #fff;              
+        }
+        
+        .about-us nav{
+           margin-top: -20px;;
+        }
+
+        .about-us .breadcrumb{
+            background-color: transparent;
+           
+        }
+        .breadcrumb a{
+            color: #fff;
+            text-decoration: none;
+        }
+       .about-parrafo{
+            border-bottom: 5px solid #33691e;
+        }
+        .about-parrafo h2{
+            font-weight: 700;
+            font-size: 35px;
+            line-height: 1.3;
+            font-family: 'Poppins',
+            sans-serif;
+                
+        }
+        .about-parrafo  p{
+           font-size: 16px;
+           font-weight: normal;
+           line-height: 27px;
+           color: #777777;
+           margin-bottom: 40px;
+        }
+        .about-parrafo li{
+                position: relative;
+                float: left;
+                width: 50%;
+                font-size: 16px;
+                /* line-height: 22px; */
+                color: #222222;
+                /* font-weight: 500; */
+                padding-left: 20px;
+                margin-bottom: 20px;
+                /* list-style: none; */
+                list-style-type: none;
+                list-style-position: initial;
+                list-style-image: initial;
+        }
+        .about-parrafo li::before {
+            position: absolute;    
+            left: 0;
+            top: 0;
+            font-size: 16px;
+            line-height: 22px;
+            color: #222222;
+            font-weight: 400;
+            content: "\f164";
+            font-family: 'fontawesome';
+           
+        }
+/*----------------------------------------------------------*/
+/*-      FIN ESTILOS   LA PAGINA DE ABOUT US              -*/
+/*----------------------------------------------------------*/
+  
+
+
+
+
+ /*----------------------------------------------------------*/
+ /*-      ESTILOS   PARA LA PAGINA PAGINA GALERIA           -*/
+ /*----------------------------------------------------------*/
+
+ #gallery {
+     background-image: url('../img/headergaleria.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+ }
+
+ .gallery .breadcrumb {
+     background-color: transparent;
+ }
+
+ /* efecto para que  al hacer hover en la foto esta se oscurezca */
+ .galleryBig .card {
+     overflow: hidden;
+     /*overFlow: hidden hace que cuando la imagen aumente con el zoom de transform  no se salga del  elemento padre
+                                es decir de la card   */
+
+ }
+
+ .galleryBig .card img {
+     transition: 1s;
+ }
+
+ .galleryBig .card:hover img {
+     transform: scale(1.1);
+     /*esta linea de codig me permite hacer  zoom  a la imagen en escala 1.1 al pasar el mouse*/
+
+     /* estos demas codigos lo que hacen es  oscurecer un poco  la imagen cuando  hago hover */
+     -webkit-filter: brightness(60%);
+     -webkit-transition: all 0.5s ease-in-out;
+     -moz-transition: all 0.5s ease;
+     -o-transition: all 0.5s ease;
+     -ms-transition: all 0.5s ease;
+     transition: all 0.5s ease-in-out;
+ }
+
+ .descripcion {
+
+     position: absolute;
+     bottom: -100px;
+     /*me tira hacia bajo la descripcion de la imagen para cuando haga hover y le coloque  bottom 0 tenga el efecto como si estuviera subiendo*/
+     box-sizing: border-box;
+     z-index: 2;
+     transition: 0.5s;
+     background-color: #222222;
+     padding: 5px;
+
+ }
+
+ .galleryBig .card:hover .descripcion {
+     bottom: 0;
+ }
+
+ .descripcion h5 {
+     font-family: 'Poppins', sans-serif;
+     box-sizing: border-box;
+     font-size: 15px;
+     text-decoration: underline;
+     margin: 0 auto;
+ }
+
+
+
+
+ /* Estos 2 medias query me modifican  la cantidad de columnas  que debe tener el efecto masonry cards
+           de bootstrap, por defecto son 3  pero con esto le agrego  4 en una pantalla tmaño lg y  5 
+           en una pantalla tamaño XL */
+ @media (min-width: 992px) {
+     .card-columns {
+         -webkit-column-count: 4;
+         -moz-column-count: 4;
+         column-count: 4;
+     }
+ }
+
+ @media (min-width: 1200px) {
+     .card-columns {
+         -webkit-column-count: 5;
+         -moz-column-count: 5;
+         column-count: 5;
+     }
+ }
+@media (max-width: 812px) {
+    .card-columns {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+    }
+}
+
+.logoBc{
+
+   width: 300px; 
+}
+ /*----------------------------------------------------------*/
+ /*-      FIN ESTILOS   PARA MODAL DONACION     -*/
+ /*----------------------------------------------------------*/
+  
+ .titulo-valor,.valor,.divisa,.nombreDivisa,.tituloTotal{
+     font-size: 20px;
+ }
+
+ /* #btnIngresarOtroValor{display: none;} */
+
+
+ 
+
+/*----------------------------------------------------------*/
+/*-       ESTILOS PARA  EL INDEX PAGINA PRINCIPAL          -*/
+/*----------------------------------------------------------*/
+
+     h1 {
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+            width: bolder;
+        }
+
+        .titulo-logo{
+            
+            font-family: 'Baloo', cursive;
+            color: #58a032;
+            /* text-decoration: underline; */
+            
+        }
+
+        /*COLOR PRINCIPAL DE LA PAGINA AGREGADO A LA BARRA PRINCIPAL DONDE ESTAN LOS SOCIAL ICONS*/
+        .contactenos iframe {
+            width: 100%;
+            height: 300px;
+        }
+        
+        .web-background {
+            background-color: #33691e;
+        }
+        .primary-color {
+           color: #33691e;
+        }
+        /* header{
+            height: 100vh;
+        } */
+
+        .header-call {
+            font-size: 15px;
+            font-weight: ;
+            color: #fff;
+        }
+        
+        .header-call a {
+            color: #fff;
+        }
+        
+        .header-call span {
+            border-width: 20px;
+        }
+        
+        .barra-nav {
+            background-color: #f8f9fa;
+        }
+        
+        .texto-carousel {          
+            /* transform: translateY(50%);esto me  centra los texto  del contenido del slider verticalmente */
+            transform: translateY(30%);
+          
+
+        }
+        
+        .contenido-carousel h1 {
+            color: #fff;
+            font-size: 46px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 12px;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .carousel-item {
+            background-position: center center;
+            background-size: cover;
+            min-height: 550px;
+            background-repeat: no-repeat;
+        }
+
+        /* fotos de fondo de los slider */       
+        #carousel1 {
+            background-image: url('../img/image0771.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            /* background-color: brown; */
+        }
+        
+        #carousel2 {
+            background-image: url('../img/image072.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        #carousel3 {
+            background-image: url('../img/image028.jpg');
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+       /* .carousel-control{
+          
+            background-color: yellow;
+           
+            
+            width: 50px;
+            height: 50px;
+            
+            
+            
+        } */
+        .baje{/*esta es una prueba para poder bajar los controles  del slider si queres quita esta clase de aqui y el html tambien  la de carousel control*/
+            margin-top: 20%;
+            
+        }
+        /* .margen-control-izquierda{
+            margin-right: 50px;
+        }  */
+
+        /*PRIMER BLOQUE DE CARTAS   LAS QUE ESTAN DEBAJO DEL SLIDER*/      
+        .cartas-primer-bloque .card-link {
+            color: #33691e;
+        }
+        
+        .cartas-primer-bloque .card {
+            font-size: 13px;
+            /* border-bottom-color: #33691e; */
+            border-radius: 3px;
+            /* border-bottom-width: 5px; */
+        }
+        
+
+        .my-button {
+            color: #fff;
+            background-color: #33691e;
+            border:0px
+         
+        }
+        .my-button:hover{background-color: #66bb6a; color: #f8f9fa}
+        
+        
+        .content-parrafo {
+            background-color: #F4F7FC;
+            height: 400px;
+        }
+
+        /* PRIMER PARRAFO DE LA PAGINA */       
+        .pararfo {
+            font-weight: 700;
+            color: #222;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .redondear li {
+            /* redondea los indicadores del carousel */
+            border-radius: 5rem;
+            height: 12px;
+            width: 12px;
+            border: 2px solid #fff;
+            background: transparent;
+        }
+        
+        .btn-parrafo a {
+            background-color: #33691e;
+            color: #fff;
+        }
+        
+      
+       
+        /*SEGUNDO BLOQUE DE CARTAS   LAS QUE ESTAN DESPUES DEL PRIMER PARRAFO*/      
+        .cards-bloque2 .btn-outline-primary {
+            border-radius: 3rem;
+            border-width: 2px;
+            font-weight: 200;
+            font-size: 12px;
+            color: #212529;
+        }
+        
+        .cards-bloque2 .btn-outline-primary:hover {
+            color: #fff;
+            background-color: #33691e;
+            border: 0px;
+        }
+        
+        .cards-bloque2 h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .cards-bloque2 .card {
+            /* auqui le indico que al hover que cuando quite el mouse la transicion salga suabe */
+            transition: transform 0.6s ease-in-out;
+        }
+        
+        .cards-bloque2:hover .card {
+            /* esta es la animacino para  la .card que  me corra 10 px hacia arriga la card 
+           cuando haga hover pero cuando saque el mouse que se regrese suabesito sin brusquedad 
+        */
+            transform: translateY(-10px);
+            transition-duration: 0.6s;
+        }
+        
+        .cards-bloque2-img {
+            height: 100px;
+            width: 100px;
+            font-size: ;
+            color: #33691e;
+            border: 1px solid #33691e;
+            margin: 0 auto;
+            border-radius: 5rem;
+        }
+        
+        .cards-bloque2-img span {
+            font-size: 50px;
+        }
+        
+        .contador {
+            min-height: 400px;
+            background: #212529 fixed no-repeat 50% 50%;
+            background-image: url('../img/contador.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* background-position: center center;
+            background: fixed; */
+        }
+        
+        .contador h1 {
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin-bottom: 0;
+            margin-top: 7px;
+        }
+        
+        .contador span {
+            font-size: 48px;
+            margin-bottom: -30px;
+        }
+        
+        .galeria h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 33px;
+            font-weight: 700;
+            margin: 0 0 20px;
+            line-height: 1;
+            color: #333333;
+        }
+        
+        .galeria p {
+            font-size: 15px;
+            line-height: 30px;
+            margin-bottom: 0;
+            color: #777777;
+        }
+         .galeria a:hover {
+
+             -webkit-filter: brightness(60%);
+             -webkit-transition: all 0.5s ease-in-out;
+             -moz-transition: all 0.5s ease;
+             -o-transition: all 0.5s ease;
+             -ms-transition: all 0.5s ease;
+             transition: all 0.5s ease-in-out;
+
+         }
+       
+        .contactenos {
+            background-color: ;
+        }
+        
+        .contenido-contactenos p {
+            color: #7f7f7f;
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 10px
+        }
+        
+        .contenido-contactenos h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #33691e;
+            text-transform: uppercase;
+        }
+        
+        .datos-empresa ul {
+            list-style: none;
+            font-size: 13px;
+            display: inline;
+            color;
+        }
+        
+        .datos-social-contactenos a {
+            font-size: 20px;
+            margin: 0 10px 0 0;
+        }
+        
+        .datos-social-contactenos a,
+        .datos-empresa a {
+            text-decoration: none;
+            color: #33691e;
+        }
+        
+        .form-contacto {
+            width: 100%;
+            color: #33691e;
+            background: none;
+            outline: none;
+            font-size: 14px;
+            padding: 1em;
+            letter-spacing: 1px;
+            border: solid 1px #33691e;
+            -webkit-appearance: none;
+            display: inline-block;
+        }
+        
+        .form-contacto input {
+            width: 100%;
+            color: #999;
+            background: none;
+            outline: none;
+            font-size: 14px;
+            padding: 1em;
+            letter-spacing: 1px;
+            border: solid 1px #33691e;
+            -webkit-appearance: none;
+            display: inline-block;
+            border-radius: 0;
+            margin-bottom: 10px;
+        }
+        
+        .form-contacto textarea {
+            resize: none;
+            width: 100%;
+            background: none;
+            color: #999;
+            font-size: 14px;
+            padding: 1em;
+            outline: none;
+            letter-spacing: 1px;
+            border: solid 1px #33691e;
+            ;
+            min-height: 10em;
+            -webkit-appearance: none;
+            margin-top: 1em;
+            border-radius: 0;
+        }
+        
+        .form-contacto button {
+            border-radius: 0;
+            background-color: #33691e;
+            border: 0px;
+            font-size: 15px;
+        }
+        
+        .form-contacto h4 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            color: #33691e;
+            text-transform: uppercase;
+        }
+        
+        footer {
+            background-image: url('../img/footer.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            background-color: #212529;
+            min-height: 300px;
+        }
+        
+        footer p {
+            font-size: 15px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #777777;
+            margin-bottom: 15px;
+        }
+        
+        footer h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #fff;
+            margin-inline-start: 10px;
+            /* margin-inline-end: 0px; */
+        }
+        
+        footer ul {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+        }
+        
+        .footer-lista-contacto {
+            font-size: 17px;
+            line-height: 36px;
+            padding-left: 8px;
+        }
+        /* footer ul {
+            list-style: none;
+            display: block;
+            margin-block-end: 1em;
+            margin-left: -50px;
+        } */
+        
+        footer li a::before {
+            content: "\f0da";
+            left: 10px;
+            position: absolute;
+            top: 0;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+        }
+        
+        footer li a {
+            display: inline-block;
+            font-size: 16px;
+            line-height: 36px;
+            padding-left: 30px;
+            position: relative;
+            color: #777777;
+        }
+        
+        footer li a:hover {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        footer .copyright {
+            min-height: 80px;
+            border-top: 1px solid #444;
+        }
+        
+        .made-by p {
+            color: #fff;
+        }
+        
+        .scrollArriba i {
+            color: #fff;
+            background-color: #33691e;
+            font-size: 15px;
+           /*  opacity: 0.5; */
+        }
+
+                     
+/*----------------------------------------------------------*/
+/*-      FIN DE ESTILOS INDEX PAGINA    PRINCIPAL          -*/
+/*----------------------------------------------------------*/
+
+        /* PANTALLA MOVIL CELULAR */       
+        @media (max-width: 812px) {
+            .contenido-carousel h1 {
+                font-size: 27px;
+                line-height: 33px;
+                margin-bottom: 12px;
+            }
+            .texto-carousel {
+                /* esto me  centra los texto so el contenido del slider verticalmente */
+                transform: translateY(30%);
+                 /* padding-top: 8%;  */
+               
+            }
+            .carousel-item {
+                background-position: center center;
+                background-size: cover;
+                min-height: 550px;
+            }
+            .content-parrafo h1 {
+                font-size: 28px;
+            }
+            .content-parrafo p {
+                font-size: 15px;
+            }
+            .footer-col-info {
+                margin-bottom: -70px;
+            }
+
+
+            .about-us h1{
+                font-size: 40px;
+            }
+            .about-titulo{
+                text-align:center;
+                font-size: px;
+                
+            }
+            .about-parrafo li {
+
+                float: none;
+            }
+        }
